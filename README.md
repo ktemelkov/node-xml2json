@@ -1,6 +1,7 @@
 # Simple XML2JSON Parser
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/buglabs/node-xml2json?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Build Status](https://travis-ci.org/buglabs/node-xml2json.svg?branch=master)](https://travis-ci.org/buglabs/node-xml2json)
+This is fork of https://github.com/buglabs/node-xml2json.git with node-expat replaced with pure JavaScript ltx XML parser.
+
+[![Build Status](https://travis-ci.org/github/ktemelkov/node-xml2json.svg?branch=master)](https://travis-ci.org/github/ktemelkov/node-xml2json)
 
 It does not parse the following elements:
 
@@ -10,17 +11,15 @@ It does not parse the following elements:
 * Entity declarations
 * Comments
 
-This module uses node-expat which will require extra steps if you want to get it installed on Windows. Please
-refer to its [documentation](https://github.com/astro/node-expat/blob/master/README.md#windows).
 
 ## Installation
 ```
-$ npm install xml2json
+$ npm install xml2json-ltx
 ```
 
 ## Usage
 ```javascript
-var parser = require('xml2json');
+var parser = require('xml2json-ltx');
 
 var xml = "<foo attr=\"value\">bar</foo>";
 console.log("input -> %s", xml)
