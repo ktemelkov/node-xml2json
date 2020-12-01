@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "index",
   "scripts": {
-    "test": "lab -a code -v -t 93 test/test.js"
+    "test": "lab -a @hapi/code -v -t 93 test/test.js"
   },
   "dependencies": {
     "hoek": "^4.2.1",
@@ -17,7 +17,8 @@
     "xml2json": "bin/xml2json"
   },
   "devDependencies": {
-    "code": "^3.0.2",
-    "lab": "^18.0.0"
+    "@hapi/code": "^8.0.2",
+    "@hapi/lab": "^24.1.0",
+    "eslint": "^7.14.0"
   }
 }
