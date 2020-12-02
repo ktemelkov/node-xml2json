@@ -330,5 +330,5 @@ describe('json2xml', function () {
 
 internals.readFixture = function (file) {
 
-    return fs.readFileSync(__dirname + '/fixtures/' + file, { encoding: 'utf-8' });
+    return fs.readFileSync(__dirname + '/fixtures/' + file, { encoding: 'utf-8' }).replace(/\r\n/g, '\n');
 };
